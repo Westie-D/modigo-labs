@@ -1,7 +1,14 @@
-def remove_duplicates(items):
-    New_list = []
+def fizzbuzz_counts(n):
+    counts = {"fizz": 0, "buzz": 0, "fizzbuzz": 0}
     
-    for item in items:
-        if item not in New_list:
-            New_list.append(item)# TODO: use a loop to build a new list with duplicates removed, keeping first occurrences
-    return New_list
+    for number in range(1, n + 1):
+        if number % 3 == 0 and number % 5 == 0:
+            counts["fizzbuzz"] += 1
+        elif number % 3 == 0:
+            counts["fizz"] += 1
+        elif number % 5 == 0:
+            counts["buzz"] += 1
+        # TODO: check divisibility by 3 and 5, and increment the correct key in `counts`
+        
+    
+    return counts
