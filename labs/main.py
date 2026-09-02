@@ -1,9 +1,12 @@
-def split_bill(a, b, c):# No starter code provided — write the full function yourself.
-    bill_amount = a
-    tip_percent = b
-    people = c# Function name: split_bill
-    tip_amount = bill_amount * (tip_percent / 100)
-    grand_total = bill_amount + tip_amount
-    person_share = grand_total / people
-    return round(person_share, 2)# Parameters: bill_amount, tip_percent, people
-# Must return: each person's share, rounded to 2 decimal places
+def bmi_report(weight_kg, height_m):
+   bmi = weight_kg / (height_m ** 2)
+   bmi = round(bmi, 1) # TODO: calculate bmi, round it to 1 decimal place, determine the category,
+   if bmi < 18.5:
+      category = "Underweight"
+   elif 18.5 <= bmi <= 24.9:
+      category = "Normal weight"
+   elif 25.0 <= bmi <= 29.9:
+      category = "Overweight"
+   else:
+      category = "Obese"
+   return f"BMI: {bmi}, Category: {category}"
