@@ -1,9 +1,13 @@
-def get_student_grade(students, name):
-    lookup = {}
-    
-    
-    for student in students:
-        lookup[student["name"]] = student["grade"] # TODO: loop through `students` and populate `lookup` with name -> grade
+def list_average(numbers):
+    if len(numbers) == 0:
+        return 0
 
-    # TODO: return the grade for `name` from `lookup`, or "Not found" if missing
-    return lookup.get(name,"Not found")
+    total = 0
+    for num in numbers:
+        total = total + num
+
+        average = total / len(numbers)
+    return round(average, 2)
+
+
+        # TODO: use a for loop to calculate the average of `numbers`, rounded to 2 decimal places
