@@ -1,8 +1,9 @@
-def count_items(items):
-    counts = {}# TODO: use a for loop to build a dictionary counting each item in `items`
-    for item in items:
-        if item in counts:
-            counts[item] += 1
-        else:
-            counts[item] = 1
-    return counts
+def get_student_grade(students, name):
+    lookup = {}
+    
+    
+    for student in students:
+        lookup[student["name"]] = student["grade"] # TODO: loop through `students` and populate `lookup` with name -> grade
+
+    # TODO: return the grade for `name` from `lookup`, or "Not found" if missing
+    return lookup.get(name,"Not found")
