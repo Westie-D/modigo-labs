@@ -1,9 +1,7 @@
-def total_scores(rounds):
-    totals = {}
-    for round_scores in rounds:
-        for player, points in round_scores.items():
-            if player in totals:
-                totals[player] += points
-            else:
-                totals[player] = points
-    return totals
+def word_lengths(words):
+    lengths = {}
+    # TODO: loop through `words` and populate `lengths` with word -> length of word
+    for word in words:
+        lengths[word] = len(word)
+
+    return lengths
