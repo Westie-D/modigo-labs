@@ -1,7 +1,4 @@
-def count_unique_visitors(visitors):
-    return len(set(visitors))
+def merge_tags(tags1, tags2):
+    merged = set(tags1 | tags2)
 
-
-    
-    # TODO: convert `visitors` to a set to remove duplicates, then return its length
-    pass
+    return merged
