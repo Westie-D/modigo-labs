@@ -1,10 +1,3 @@
-def compare_hobbies(person1_hobbies, person2_hobbies):
-    return {
-        "shared" : person1_hobbies & person2_hobbies,
-        "only_person1" : person1_hobbies - person2_hobbies,
-        "only_person2" : person2_hobbies - person1_hobbies
-    }
-    result = compare_hobbies(person1_hobbies, person2_hobbies)
-    return result
-    # TODO: use set operations to find shared, only_person1, and only_person2 hobbies
-    pass
+def apply_discount(price, discount_percent=10):
+    discounted_percent = price - (price * discount_percent / 100)
+    return round(discounted_percent, 2)
